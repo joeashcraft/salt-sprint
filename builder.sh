@@ -4,7 +4,8 @@
 # Exit if any command returns non-zero
 set -e
 
-BUILD_DIR=$HOME/$CIRCLE_PROJECT_REPONAME
+#BUILD_DIR=$HOME/$CIRCLE_PROJECT_REPONAME
+BUILD_DIR=.
 
 if [ -d revelator ]; then
   echo "******** Checking for latest version of Revelator ********"
@@ -29,6 +30,6 @@ for i in fundamentals lunchlearn operational
     echo "******** Generating Slides on $i ********"
     python revelator/write_it $i_comp.yml output/$i
     echo "******** Hacking stylesheets for $i ********"
-    sed -e '32s/#eeeeee/#000000/' -i output/$i/css/theme/default.css
-    sed -e '49s/#eeeeee/#000000/' -i output/$i/css/theme/default.css
+    gsed -e '32s/#eeeeee/#000000/' -i output/$i/css/theme/default.css
+    gsed -e '49s/#eeeeee/#000000/' -i output/$i/css/theme/default.css
   done

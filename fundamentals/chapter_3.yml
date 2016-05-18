@@ -80,7 +80,7 @@ slides:
              - "Ansible: Agentless (uses ssh)"
              - "Salt: Master + Minion (client), or Standalone"
          -
-           - h2: Management 
+           - h2: Management
            - ul:
              - "Chef: Code based pull, but added ZeroMQ push feature recently"
              - "Ansible: YAML based push using ssh or ZeroMQ"
@@ -103,13 +103,13 @@ slides:
              - "Salt: Jinja2, others"
            - class_notes: |
                Explain notion of templating
-               Mention Ansible and Salt use jinja2 differently 
+               Mention Ansible and Salt use jinja2 differently
                  i.e. Ansible parses YAML files 1st, then does jinja2; Salt does jinja interpolations, then parses as YAML
          -
            - h2: Advantages of Salt
            - ul:
              - Agents add (targeting) flexibility
-             - HA options availible
+             - HA options available
              - Highly modular
              - Friendly community driven development
              - API

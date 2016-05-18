@@ -9,7 +9,7 @@ slides:
      - nested:
          -
            - h1: Example Commands and State Files
-           - ul: 
+           - ul:
              - State and Execution Modules
              - test.ping
              - command
@@ -67,19 +67,15 @@ slides:
            - h2: Your turn!
            - ul:
              - on your salt master run the test.ping module targeting all minions
-             - Look up the documentation on the user module
-           - link: ['http://docs.saltstack.com/en/latest/ref/modules/all/salt.modules.useradd.html', 'http://docs.saltstack.com/en/latest/ref/modules/all/salt.modules.useradd.html' ]
-           - code: |
-               salt --doc
            - class_notes: |
-               1. Semi guided lab. There may be many who need help at first. Guide them through running the test.ping command and looking up documentation on a module.
+               1. Semi guided lab. There may be many who need help at first. Guide them through running the test.ping command.
 
          -
            - h2: YAML Examples
            - p: "SaltStack has some good examples documented here:"
            - code: |
                http://docs.saltstack.com/en/latest/topics/yaml/index.html
-         -
+         - # JCP - add a slide here showing how to add a user with the execution state
            - h2: State Modules
            - p: 'State modules are used when calling state.sls or highstate against a minion.'
            - code: |
