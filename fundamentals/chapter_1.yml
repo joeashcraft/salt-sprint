@@ -40,7 +40,7 @@ slides:
            - p: A key-value pair which contains a fact about a system, such as its hostname, network addresses. This should always be static information.
          -
            - h1: State
-           - p: A description of the disired configuration of salt minions, States comprise of single or multiple salt modules.
+           - p: A description of the desired configuration of salt minions, States comprise of single or multiple salt modules.
 
          -
            - h1: State Module
