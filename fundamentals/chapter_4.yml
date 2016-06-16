@@ -57,7 +57,7 @@ slides:
 
          -
            - h2: 'Salt Keys'
-           - p: 'Salt Keys manages which machines are allowed / not allowed to commicate with the Salt Master'
+           - p: 'Salt Keys manages which machines are allowed / not allowed to communicate with the Salt Master'
            - code: |
               salt-key
            - p: 'The -A flag will accept all pending keys'
